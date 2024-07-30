@@ -25,6 +25,25 @@ class SteamAPI {
         })
     })
   }
+
+  getItems(appId) {
+    return new Promise((resolve, reject) => {
+      const requestOptions = {
+        method: 'GET',
+        url: `${API_URL}/market/items/${appId}`,
+        params: { api_key: API_KEY }
+      }
+
+      axios
+        .request(requestOptions)
+        .then(function (response) {
+          resolve(response.data)
+        })
+        .catch(function (error) {
+          reject(error)
+        })
+    })
+  }
 }
 
 export default SteamAPI;
