@@ -29,7 +29,7 @@ async function main() {
   let item = await api.getItem(730, "AK-47 | Redline (Field-Tested)")
   console.log(item)
 
-	let items = await api.getItems(730)
-	console.log(items)
+  let items = await api.getItems(730)
+  console.log(items)
 }
 ```
