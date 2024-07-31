@@ -9,6 +9,9 @@
 	</p>
 </div>
 
+## Contribution
+If you notice something that can be improved, please open a pull request!
+
 ## Instructions
 
 1. Install this plugin:
